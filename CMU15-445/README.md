@@ -7,17 +7,17 @@ Reference Textbook: <u>Database System Concepts (7th Edition)</u>
 
 
 
-**README for *"test_for_HW1.sh"***
-> Just the diff tool to check the HW1.
+**README for *"test_all.sh"***
+> IMPORTANT: Just the diff tool to check and score the HW1.
 > 
-> Use it by putting with your homework/qx_xxxx.sql and the solution SQL
-> with sol/qx_xxxx.sql.
+> You should first put your .sql solution under the dir and download and unzip the [sol](https://15445.courses.cs.cmu.edu/fall2021/files/hw1_sol.zip), and put it with your solution folder in the same level.
 
-Look Below:
+Then run the Shell below:
+
 ```Shell
-sh test_for_HW1.sh qx_xxxx.sql sol/qx_xxxx.sql
+sh test_all.sh
 ```
-Then Shell will return you an answer. 
+Then Shell will return you the score for HW1. 
 
 
 Progress:
@@ -25,6 +25,6 @@ Progress:
 |    Time    | Lecture              | Lab | Reading | During |
 | ---------- | ---                  | --- | ---     | -----  |
 | 2022.1.18  |  Lec1(Intro)         | N/A | Chap 1-2  | 1h     |
-| 2022.1.19  |  Lec2(SQL)           | [HW1(SQL)](https://15445.courses.cs.cmu.edu/fall2021/homework1/)|Chap 3-5 | 3h     |
-| 2022.1.20  |  Lec3&4(DB Storage)  | [Proj1(Buffer Pool Manager)](https://15445.courses.cs.cmu.edu/fall2021/project1/) | Chap 12-13| ?h|
+| 2022.1.19  |  Lec2(SQL)           | [HW1(SQL)](https://15445.courses.cs.cmu.edu/fall2021/homework1/)|Chap 3-5 | 6h     |
+| 2022.1.20-1.21  |  Lec3&4(DB Storage)  | [Proj1(Buffer Pool Manager)](https://15445.courses.cs.cmu.edu/fall2021/project1/) | Chap 12-13| ?h|
 
