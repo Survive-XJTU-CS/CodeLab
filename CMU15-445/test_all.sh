@@ -26,17 +26,17 @@ sh csv_generate.sh q3_northamerican.sql ../sol/q3_northamerican.sql;
 tail  -n 20 ./diff/diff1.csv >> ./diff/diffing1.csv;
 tail  -n 20 ./diff/correct.csv >> ./diff/correcting.csv; 
 
-echo "Q$i Testing......\n";
+echo "Q$i Testing......";
 i=$[$i+1]
 cd diff
 diff diffing1.csv correcting.csv > /dev/null
 if [ $? == 0 ]; then
-	echo "==========PASSED===========\n"
+	echo "==========PASSED==========="
 	score=$[$score+5]
 	cd ..
 	rm -rf diff
 else
-	echo "=========UNPASSED==========\n"
+	echo "=========UNPASSED=========="
 	cd ..
 fi
 sh csv_generate.sh q4_delaypercent.sql ../sol/q4_delaypercent.sql;
@@ -55,7 +55,7 @@ sh csv_generate.sh q10_christmas.sql ../sol/q10_christmas.sql;
 Test_SQL 15
 
 
-echo "Your Final Score: $score \n"
+echo "Your Final Score: $score "
 if [ $score -eq 100 ]; then
 	echo "Nice Work!!! You Have Passed All the Test!!! Keep Going!!!"
 else
