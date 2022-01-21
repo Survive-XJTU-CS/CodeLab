@@ -12,10 +12,22 @@ Reference Textbook: <u>Database System Concepts (7th Edition)</u>
 > 
 > You should first put your .sql solution under the dir and download and unzip the [sol](https://15445.courses.cs.cmu.edu/fall2021/files/hw1_sol.zip), and put it with your solution folder in the same level.
 
+Like the Dir List Below:
+```Shell
+$ ls -l
+total 0
+ Date    Time   Name
+ ------  -----  ------
+ Jan 19  20:33  bustdb/
+ Jan 21  21:47  hw1/
+ Jan 20  23:34  sol/
+```
+Your .sql answer, *'northwind-cmudb2021.db'* and the Shell Code should be under hw1/ .
+
 Then run the Shell below:
 
 ```Shell
-sh test_all.sh
+bash test_all.sh
 ```
 Then Shell will return you the score for HW1. 
 
