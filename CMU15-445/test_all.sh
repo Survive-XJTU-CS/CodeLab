@@ -3,17 +3,17 @@ score=0
 #scoring=0
 i=1
 function Test_SQL {
-	echo "Q$i Testing......\n";
+	echo "Q$i Testing......";
 	i=$[$i+1]
 	cd diff
 	diff diff1.csv correct.csv > /dev/null
 	if [ $? == 0 ]; then
-		echo "==========PASSED===========\n"
+		echo "==========PASSED==========="
 		score=$[$score+$1]
 		cd ..
 		rm -rf diff
 	else
-		echo "=========UNPASSED==========\n"
+		echo "=========UNPASSED=========="
 		cd ..
 	fi
 }
